@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Portfolio Sample</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+            padding: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 20px;
+            max-width: 450px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        #counterBox {
+            margin-top: 20px;
+            padding: 10px;
+            background: #fafafa;
+            border: 1px solid #ddd;
+            text-align: center;
+            border-radius: 6px;
+        }
+
+        button {
+            padding: 8px 14px;
+            margin: 5px;
+            background: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+<div class="card">
+    <h2>Sample Portfolio</h2>
+    <p>This is a simple HTML + CSS + JavaScript demo page.</p>
+
+    <div id="counterBox">
+        <h3>Click Counter</h3>
+        <p id="count">0</p>
+        <button onclick="increment()">Increase</button>
+        <button onclick="reset()">Reset</button>
+    </div>
+</div>
+
+<script>
+    let count = 0;
+
+    function increment() {
+        count++;
+        document.getElementById("count").innerText = count;
+    }
+
+    function reset() {
+        count = 0;
+        document.getElementById("count").innerText = count;
+    }
+</script>
+
+</body>
+</html>
